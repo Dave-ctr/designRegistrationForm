@@ -1,0 +1,22 @@
+body
+{
+  font-size: 16px;
+  background-color: black;
+  color: red;
+}
+
+#main-title
+{
+  color: azure;
+  font-family: Verdana, Tahoma, sans-serif;
+  text-align: center;
+  text-decoration: underline red;
+}
+
+#regoForm
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
