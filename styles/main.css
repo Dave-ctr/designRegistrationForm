@@ -3,6 +3,9 @@ body
   font-size: 16px;
   background-color: black;
   color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #main-title
@@ -13,10 +16,34 @@ body
   text-decoration: underline red;
 }
 
+#formTitle
+{
+  color: azure;
+  text-decoration: underline red;
+}
+
+#regoFormContainer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
 #regoForm
 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 16px;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.inputField
+{
+  text-align: center;
 }

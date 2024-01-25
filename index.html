@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -9,44 +9,55 @@
 </head>
 
 <body>
-  <h1 id="main-title">Waitangi Day Festival</h1>
-  <form id="regoForm">
-    <h2><strong>Register Here!!</strong></h2>
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br>
-    <label for="passwordConf">Confirm Password:</label><br>
-    <input type="password" id="passwordConf" name="passwordConf"><br>
-    <label for="age">Age:</label><br>
-    <select name="age" id="age">
-      <option value="0-9">0-9</option>
-      <option value="10-19">10-19</option>
-      <option value="20-29">20-29</option>
-      <option value="30-39">30-39</option>
-      <option value="40-49">40-49</option>
-      <option value="50-59">50-59</option>
-      <option value="60-69">60-69</option>
-      <option value="70-79">70-79</option>
-      <option value="80-89">80-89</option>
-      <option value="90-99">90-99</option>
-      <option value="100+">100+</option>
-    </select>
-    <p>Select A <em>Gender</em>:<br>
-      <input type="radio" id="female" name="gender" value="Female">
-      <label for="female">Female</label><br>
-      <input type="radio" id="male" name="gender" value="Male">
-      <label for="male">Male</label><br>
-      <input type="radio" id="other" name="gender" value="Other">
-      <label for="other">Other</label><br>
-    </p>
-    <input type="submit" value="Submit">
-  </form>
 
+  <h1 id="main-title">Waitangi Day Festival</h1>
+  <div id="regoFormContainer">
+    <form id="regoForm" action="/action_page.php" autocomplete="on">
+      <h2 id="formTitle"><strong>Register Here!!</strong></h2>
+      <div class="inputField"><label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+      </div>
+      <div class="inputField"><label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
+      </div>
+      <div class="inputField"><label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+      </div>
+      <div class="inputField"><label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+      </div>
+      <div class="inputField"><label for="passwordConf">Confirm Password:</label><br>
+        <input type="password" id="passwordConf" name="passwordConf" required><br>
+      </div>
+      <div class="inputField"><label for="age">Age:</label><br>
+        <select name="age" id="age">
+          <option value="0-9">0-9</option>
+          <option value="10-19">10-19</option>
+          <option value="20-29">20-29</option>
+          <option value="30-39">30-39</option>
+          <option value="40-49">40-49</option>
+          <option value="50-59">50-59</option>
+          <option value="60-69">60-69</option>
+          <option value="70-79">70-79</option>
+          <option value="80-89">80-89</option>
+          <option value="90-99">90-99</option>
+          <option value="100+">100+</option>
+        </select>
+      </div>
+      <div>
+        <p>Select A <em>Gender</em>:<br>
+          <input type="radio" id="female" name="gender" value="Female">
+          <label for="female">Female</label><br>
+          <input type="radio" id="male" name="gender" value="Male">
+          <label for="male">Male</label><br>
+          <input type="radio" id="other" name="gender" value="Other">
+          <label for="other">Other</label><br>
+        </p>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+
+  </div>
 </body>
 
-</html>
+</htm>
